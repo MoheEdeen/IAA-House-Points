@@ -58,7 +58,7 @@ The Housepoints project was developed by a team of four students to create a rel
 - **Search**: Search for house points by house or student.
 - **Leaderboards**: View and filter leaderboards based on the IB learning profiles.
 
-## License and Usage
+## License
 
 This project is **not open source** and is provided for **personal use only**. By accessing or downloading the code, you agree to the following terms:
 
