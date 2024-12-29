@@ -1,0 +1,30 @@
+body{
+    background-color: #0F2537;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    align-items: center;
+    height:400px;
+  }
+
+button{
+    background-color:rgb(206, 225, 177);
+    width: 300px;
+    height: 130px;
+    color:black;
+    border: black 2px solid;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(110%);
+    border-color:red;
+}
+
+h1{
+    padding-top:50px;
+}

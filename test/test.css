@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');  
+ :root {  
+  --line-border-fill: #faba25;  
+  --line-border-fill2: #99c4f5;
+  --line-border-fill3: #65f049;
+  --line-border-fill4: #cce24e;
+  --line-border-empty: #e0e0e0;  
+ }  
+ * {  
+  box-sizing: border-box;  
+ }  
+ body {  
+  background-color: #f6f7fb;  
+  font-family: 'Muli', sans-serif;  
+  height: 100vh;  
+  overflow: hidden;  
+  margin: 0;  
+ }  
+ .organizer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 200px;
+ }
+ .container, .container2, .container3, .container4{  
+  text-align: center;  
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+ }  
+ .progress-container,.progress2-container2, .progress3-container3, .progress4-container4{  
+  display: flex;  
+  justify-content: space-between;  
+  position: relative;  
+  margin-bottom: 30px;  
+  max-width: 100%;  
+  width: 350px;  
+ }  
+ .progress-container::before, .progress2-container2::before, .progress3-container3::before, .progress4-container4::before{  
+  content: '';  
+  background-color: var(--line-border-empty);  
+  position: absolute;  
+  top: 50%;  
+  left: 0;  
+  transform: translateY(-50%);  
+  height: 4px;  
+  width: 100%;  
+  z-index: -1;  
+ }  
+ .progress{  
+  background-color: var(--line-border-fill);  
+  position: absolute;  
+  top: 50%;  
+  left: 0;  
+  transform: translateY(-50%);  
+  height: 4px;  
+  width: 0%;  
+  z-index: -1;  
+  transition: 0.4s ease;  
+ }  
+
+
+ .progress2 {  
+    background-color: var(--line-border-fill2);  
+    position: absolute;  
+    top: 50%;  
+    left: 0;  
+    transform: translateY(-50%);  
+    height: 4px;  
+    width: 0%;  
+    z-index: -1;  
+    transition: 0.4s ease;  
+ }
+
+ .progress3 {  
+    background-color: var(--line-border-fill3);  
+    position: absolute;  
+    top: 50%;  
+    left: 0;  
+    transform: translateY(-50%);  
+    height: 4px;  
+    width: 0%;  
+    z-index: -1;  
+    transition: 0.4s ease;  
+ }
+ 
+ .progress4 {  
+    background-color: var(--line-border-fill4);  
+    position: absolute;  
+    top: 50%;  
+    left: 0;  
+    transform: translateY(-50%);  
+    height: 4px;  
+    width: 0%;  
+    z-index: -1;  
+    transition: 0.4s ease;  
+ }
+
+ .circle, .kircle, .fircle, .lircle{  
+  background-color: #fff;  
+  color: #999;  
+  border-radius: 50%;  
+  height: 30px;  
+  width: 30px;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  border: 3px solid var(--line-border-empty);  
+  transition: 0.4s ease;  
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+ }  
+
+
+ .circle.active {  
+  border-color: var(--line-border-fill);  
+ }
+
+.kircle.active2 {  
+    border-color: var(--line-border-fill2);  
+}
+
+.fircle.active3 {  
+    border-color: var(--line-border-fill3);  
+}
+
+.lircle.active4 {  
+    border-color: var(--line-border-fill4);  
+}
+ 
+ 
+ .btn {  
+  background-color: var(--line-border-fill);  
+  color: #fff;  
+  border: 0;  
+  border-radius: 6px;  
+  cursor: pointer;  
+  font-family: inherit;  
+  padding: 8px 30px;  
+  margin: 5px;  
+  font-size: 14px;  
+ }  
+ .btn:active {  
+  transform: scale(0.98);  
+ }  
+ .btn:focus {  
+  outline: 0;  
+ }  
+ .btn:disabled {  
+  background-color: var(--line-border-empty);  
+  cursor: not-allowed;  
+ }  

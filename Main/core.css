@@ -1,0 +1,192 @@
+:root{
+    --underline: #ffffff;
+
+}
+
+body{
+    overflow: hidden;
+}
+
+
+
+.row{
+    height: 100vh;
+    font-family: Montserrat,sans-serif;
+        font-size: 2.5vw;
+    
+}
+
+.houses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.wildcats, .dolphins, .falcons, .wolves{
+    transition: 0.2s;
+}
+
+.wildcats:hover{
+    transform:scale(1.02);
+    background-color: #faba25;
+    color:black;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+
+}
+
+
+span:hover ~ hr {
+    width: 90%;
+
+}
+
+.dolphins:hover{
+    transform:scale(1.02);
+    background-color: #6cabde;
+    color:black;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+
+.falcons:hover{
+    transform:scale(1.02);
+    background-color: #b3d78e;
+    color:black;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+
+}
+
+
+.wolves:hover{
+    transform:scale(1.02);
+    background-color: #fae385;
+    color:black;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+hr {
+    width: 0px;
+    height: 5px;
+    background: var(--underline);
+    border: var(--underline);
+    margin: 0px;
+    transition: width 450ms ease-out;
+}
+
+@keyframes shine {
+0% {
+    background-position: 0;
+}
+60% {
+    background-position: 600px;
+}
+100% {
+    background-position: 600px;
+}
+}
+
+.yellow-color {
+    color:hsl(51, 100%, 50%);
+    cursor:pointer;
+    background: linear-gradient(to right, hsl(51, 100%, 50%) 0, hsl(0, 0%, 100%) 10%, hsl(51, 100%, 50%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 50s infinite linear;
+    }
+
+button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;   
+    padding: 10px;    
+}
+.hide{
+    display:none;
+}
+
+.bottom_border[type=number]{
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 5px solid #000000;
+    background: transparent;
+    -moz-appearance: textfield;
+}
+
+.bottom_border[type=number]:focus{
+    border:none;
+    background: transparent;
+    outline:none;
+    color: rgb(255, 255, 255);
+}
+
+
+.bottom_border[type=number]:focus::placeholder {
+    color: rgb(255, 255, 255);
+  }
+
+.bottom_border[type=number]:focus::-webkit-input-placeholder { /* Edge */
+    color: rgb(255, 255, 255);
+  }
+  
+.bottom_border[type=number]:focus::-ms-input-placeholder { /* Internet Explorer */
+    color: rgb(255, 255, 255);
+  }
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.invisible {
+    visibility: hidden;
+    animation: fadeOutAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.visible {
+    visibility: visible;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+     }
+}
+
+#aqaba_dolphins_button:hover, #pela_falcons_button:hover, #zara_wildcats_button:hover, #rum_wolves_button:hover{
+    cursor:auto;
+}
+
+@media screen and (max-width: 1000px) {
+    body{
+        overflow:visible;
+    }
+  }
+
+#login_but:hover{
+    transform: scale(110%);
+}
