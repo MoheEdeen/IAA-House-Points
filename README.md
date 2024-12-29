@@ -73,3 +73,14 @@ This project is **not open source** and is provided for **personal use only**. B
 
 3. **Attribution**:
    - If you reference or share the project, you must provide clear attribution to the author.
+
+## Images
+![image](https://github.com/user-attachments/assets/e9e783b6-563e-430e-85f3-9c740340c192)
+![image](https://github.com/user-attachments/assets/47b1fc3c-fdf5-42ae-9bb1-e464fe82eb90)
+![image](https://github.com/user-attachments/assets/1d38dade-0d3b-45db-bd6e-bf9753c98fa5)
+![image](https://github.com/user-attachments/assets/99b95ab6-b681-409e-a27c-cace1ea3f1cf)
+
+## Another Repo for Project:
+https://github.com/Hashezm/IAA-HousePoints-prototype
+
+
